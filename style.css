@@ -100,7 +100,7 @@ a {
 .main {
   flex: 70%; /* Установите ширину основного содержимого */
   background-color: #f1f1f1;
-  padding: 20px; /* Немного отступов */
+  padding: 10px 5px 0px 5px; /* Немного отступов */
 }
 
 /* Адаптивный макет, когда экран меньше, чем 600px широкий, сделать два столбцы складываются друг на друга, а не рядом друг с другом */
@@ -109,9 +109,15 @@ a {
     flex-direction: column;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .tablinks {
+    font-size: 12px;
+  }
+}
   
 /* Адаптивный макет, когда экран меньше 405 пикселей в ширину, сделайте навигационные ссылки стекаются друг на друга, а не рядом друг с другом */
-@media screen and (max-width: 405px) {
+@media screen and (max-width: 350px) {
   .navbar a {
     float: none;
     width: 100%;
@@ -133,7 +139,7 @@ a {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 14px 14px;
 }
 
 /* Изменение цвета фона кнопок при наведении курсора */
@@ -184,37 +190,28 @@ a {
   line-height: 150%;
 }
 
-.profile_info .label {
-  width: 190px;
+.profile_info {
   color: var(--text_secondary);
 }
 
 .profile_info_row {
+  font-size: 14px;
   padding-top: 10px;
 }
 
-.profile_info_row .label {
+.profile_info_row {
   margin: 0;
 }
 
-.profile_info_row .label {
-  font-weight: 400;
+.profile_info_row {
+  font-weight: 40;
   -webkit-font-smoothing: subpixel-antialiased;
   -moz-osx-font-smoothing: auto;
 }
 
-.profile_info .labeled {
+.profile_info {
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.labeled {
-  font-size: 14px;
-}
-
-.fl_l {
-  font-size: 14px;
-  float: left;
 }
 
 .text-orange {
