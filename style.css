@@ -1,0 +1,228 @@
+.header {
+  padding: 80px; /* немного отступов */
+  text-align: center; /* текст по центру */
+  background: linear-gradient(white, #111);
+  color: white; /* белый цвет текста */
+}
+  
+/* Увеличить размер шрифта элемента <h1> */
+.header h1 {
+  font-size: 39px;
+}
+
+/* Стиль верхней панели навигации */
+.navbar {
+  overflow: hidden; /* Скрыть переполнение */
+  background-color: #111; /* Темный цвет фона */
+}
+  
+/* Стиль ссылок на панели навигации */
+.navbar a {
+  float: left; /* Убедитесь, что ссылки остаются бок о бок */
+  display: block;
+  text-align: center;
+  color: white; /* Белый цвет текста */
+  padding: 8px 20px; /* Добавить некоторые отступы */
+}
+
+a {
+  text-decoration: none;
+}
+  
+/* Выровненная по правому краю ссылка */
+.navbar a.right {
+  float: right; /* Переместите ссылку вправо */
+}
+
+/* Обеспечения правильного выбора размера */
+* {
+  box-sizing: border-box;
+}
+  
+/* Контейнер колонка */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+  
+/* Создайте два неравных столбца, которые находятся рядом друг с другом */
+/* Боковая панель/левая колонка */
+.side {
+  color: white;
+  flex: 30%; /* Установите ширину боковой панели */
+  background: linear-gradient(#111, #555);
+  padding: 20px; /* Немного отступов */
+}
+
+.avatar_img {
+  width: 80%;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.challenge {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 14px;
+  cursor: pointer;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tel {
+  color: black;
+}
+
+.my_contacts {
+  margin: -12.5px 0px 0px -5px;
+}
+
+.my_contacts_soc {
+  margin: 0px 0px 10px 0px;
+}
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+  
+/* Основная колонка */
+.main {
+  flex: 70%; /* Установите ширину основного содержимого */
+  background-color: #f1f1f1;
+  padding: 20px; /* Немного отступов */
+}
+
+/* Адаптивный макет, когда экран меньше, чем 600px широкий, сделать два столбцы складываются друг на друга, а не рядом друг с другом */
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+}
+  
+/* Адаптивный макет, когда экран меньше 405 пикселей в ширину, сделайте навигационные ссылки стекаются друг на друга, а не рядом друг с другом */
+@media screen and (max-width: 405px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* Стиль вкладки */
+.tab {
+  overflow: hidden;
+  background-color: #555;
+  margin-bottom: 20px;
+}
+
+/* Стиль кнопок, которые используются для открытия содержимого вкладки */
+.tab button {
+  color: white;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+}
+
+/* Изменение цвета фона кнопок при наведении курсора */
+.tab button:hover {
+  text-align: center;
+  background-color: #444;
+}
+
+/* Стиль содержимого вкладки */
+.tabcontent {
+  display: none;
+  padding: 16px 12px;
+  border-top: none;
+}
+
+.footer {
+  padding: 20px; /* Немного отступов */
+  text-align: center; /* Текст по центру */
+  color: white;
+  background: linear-gradient(#555, white);
+}
+
+/* Информационный блок */
+.profile_info_block {
+  padding: 0 0 29px;
+  border-top: 1px solid #555;
+}
+
+.clear_fix {
+  display: block;
+}
+
+.profile_info_header_wrap {
+  border-bottom: none;
+  margin: -11px 0 10px;
+  position: relative;
+}
+
+.profile_info_header {
+  font-size: 16px;
+  color: #222;
+  background-color: #f1f1f1;
+  padding: 5px 10px 5px 5px;
+  display: inline;
+}
+
+.profile_info {
+  line-height: 150%;
+}
+
+.profile_info .label {
+  width: 190px;
+  color: var(--text_secondary);
+}
+
+.profile_info_row {
+  padding-top: 10px;
+}
+
+.profile_info_row .label {
+  margin: 0;
+}
+
+.profile_info_row .label {
+  font-weight: 400;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
+}
+
+.profile_info .labeled {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.labeled {
+  font-size: 14px;
+}
+
+.fl_l {
+  font-size: 14px;
+  float: left;
+}
+
+.text-orange {
+  color: rgb(255, 0, 0);
+}
+
+.icon {
+  padding: 5px;
+  float: left;
+  width: 25%;
+}
