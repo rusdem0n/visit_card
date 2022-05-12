@@ -1,13 +1,12 @@
 .header {
-  padding: 80px; /* немного отступов */
+  padding: 70px 15px 70px 15px; /* немного отступов */
   text-align: center; /* текст по центру */
   background: linear-gradient(white, #111);
   color: white; /* белый цвет текста */
 }
-  
-/* Увеличить размер шрифта элемента <h1> */
+
 .header h1 {
-  font-size: 39px;
+  font-size: 35px;
 }
 
 /* Стиль верхней панели навигации */
@@ -18,7 +17,7 @@
   
 /* Стиль ссылок на панели навигации */
 .navbar a {
-  float: left; /* Убедитесь, что ссылки остаются бок о бок */
+  float: left;
   display: block;
   text-align: center;
   color: white; /* Белый цвет текста */
@@ -139,7 +138,7 @@ a {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 14px;
+  padding: 14px 10px;
 }
 
 /* Изменение цвета фона кнопок при наведении курсора */
