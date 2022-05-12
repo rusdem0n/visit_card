@@ -7,9 +7,9 @@
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="style.css">
 <style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
 </style>
 </head>
 <body>
@@ -60,31 +60,31 @@ body {
           </a>
         </button>
         </div>
-      <h4>МоИ КоНтАкТы:</h4>
-      <h4 style="color: rgb(170, 170, 170);">ТеЛеФоН</h4>
+      <h4>Мои контакты:</h4>
+      <h4 class="subtitle">Телефон</h4>
       <p class="my_contacts">
         <a href="tel:+7 (921) 509-78-12" style="color: white; text-decoration: none;">
           +7 (921) 509-78-12
         </a>
       </p>
-      <h4 style="color: rgb(170, 170, 170);">ПоЧтА</h4>
-      <p class="my_contacts">russiandem0n@icloud.com</p>
-      <h4 style="color: rgb(170, 170, 170);">СоЦсЕтИ</h4>
+      <h4 class="subtitle">Почта</h4>
+      <p class="my_contacts"><a style="color: white" href="mailto:russiandem0n@vk.com">russiandem0n@icloud.com</a></p>
+      <h4 class="subtitle">Соцсети</h4>
       <div class="my_contacts">
         <p class="my_contacts_soc">
-          <a href="https://vk.com/russiandem0n" class="text-orange">Vk.com @russiandem0n</a>
+          <a href="https://vk.com/russiandem0n" class="text-light-blue">Vk.com @russiandem0n</a>
         </p>
         <p class="my_contacts_soc">
-          <a href="https://instagram.com/23rd.personage" class="text-orange">Instagram.com @23rd.personage</a>
+          <a href="https://instagram.com/23rd.personage" class="text-light-blue">Instagram.com @23rd.personage</a>
         </p>
         <p class="my_contacts_soc">
-          <a href="https://t.me/russiandem0n" class="text-orange">Telegram.com @russiandem0n</a>
+          <a href="https://t.me/russiandem0n" class="text-light-blue">Telegram.com @russiandem0n</a>
         </p>
         <p class="my_contacts_soc">
-          <a href="https://wa.me/79215097812" class="text-orange">WhatsApp.com @ +7 (921) 509-78-12</a>
+          <a href="https://wa.me/79215097812" class="text-light-blue">WhatsApp.com @ +7 (921) 509-78-12</a>
         </p>
       </div>
-      <p style="font-size: 14px; color: gray;">коснитесь иконки, чтобы перейте к диалогу со мной</p>
+      <p style="font-size: 12px; color: gray; text-align: center;">кликните иконку, чтобы перейти к диалогу со мной</p>
       <div>
         <a href="https://vk.com/russiandem0n">
           <img class="icon" src="icon-vk.png">
@@ -103,10 +103,10 @@ body {
     <div class="main">
       <!-- Ссылки вкладки -->
       <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'Basic')">основное</button>
-        <button class="tablinks" onclick="openCity(event, 'Interests')">интересы</button>
-        <button class="tablinks" onclick="openCity(event, 'Education')">образование</button>
-        <button class="tablinks" onclick="openCity(event, 'View')">воззрение</button>
+        <button class="tablinks" onclick="openCity(event, 'Basic')" id="defaultOpen">[ основное ]</button>
+        <button class="tablinks" onclick="openCity(event, 'Interests')">[ интересы ]</button>
+        <button class="tablinks" onclick="openCity(event, 'Education')">[ образование ]</button>
+        <button class="tablinks" onclick="openCity(event, 'View')">[ воззрение ]</button>
       </div>
       <!-- Содержимое вкладки -->
       <div id="Basic" class="tabcontent">
@@ -118,20 +118,20 @@ body {
 
           <div class="profile_info">
             <dl class="clear_fix profile_info_row ">
-              <dt style="font-size: 15px;">Дата рождения:</dt>
-              <dd><span class="text-orange">23 Января 2005</span></dd>
+              <dt style="font-size: 16px;">Дата рождения:</dt>
+              <dd><span class="text-dark-blue">23 Января 2005</span></dd>
             </dl>
             <dl class="clear_fix profile_info_row ">
-              <dt style="font-size: 15px;">Семейное положение:</dt>
-              <dd><span class="text-orange">Не женат</span></dd>
+              <dt style="font-size: 16px;">Семейное положение:</dt>
+              <dd><span class="text-dark-blue">Не женат</span></dd>
             </dl>
             <dl class="clear_fix profile_info_row ">
-              <dt style="font-size: 15px;">Родной город:</dt>
-              <dd><span class="text-orange">RF/PSKOV/KRASNOGORODSK/KRESTY</span></dd>
+              <dt style="font-size: 16px;">Родной город:</dt>
+              <dd><span class="text-dark-blue">RF/PSKOV/KRASNOGORODSK/KRESTY</span></dd>
             </dl>
             <dl class="clear_fix profile_info_row ">
-              <dt style="font-size: 15px;">Языки:</dt>
-              <dd><span class="text-orange">Русский</span></dd>
+              <dt style="font-size: 16px;">Языки:</dt>
+              <dd><span class="text-dark-blue">Русский</span></dd>
             </dl>
           </div>
           
@@ -147,35 +147,35 @@ body {
 
           <div class="profile_info">
             <dl class="clear_fix profile_info_row ">
-              <dt style="font-size: 15px;">Деятельность:</dt>
-              <dd><span class="text-orange">информация отсутствует</span></dd>
+              <dt style="font-size: 16px;">Деятельность:</dt>
+              <dd><span class="text-dark-blue">информация отсутствует</span></dd>
             </dl>
             <dl class="clear_fix profile_info_row ">
-              <dt style="font-size: 15px;">Интересы:</dt>
-              <dd><span class="text-orange">информация отсутствует</span></dd>
+              <dt style="font-size: 16px;">Интересы:</dt>
+              <dd><span class="text-dark-blue">информация отсутствует</span></dd>
             </dl>
             <dl class="clear_fix profile_info_row ">
-              <dt style="font-size: 15px;">Любимая музыка:</dt>
+              <dt style="font-size: 16px;">Любимая музыка:</dt>
               <dd>Рок, электронная музыка, инди, альтернатива и другие:<br>Наутиус Помпилиус, ssshhhiiittt!, Дайте танк (!), Mujuice, БИ-2, Порнофильмы и т. д.</dd>
             </dl>
             <dl class="clear_fix profile_info_row ">
-              <dt style="font-size: 15px;">Любимые фильмы:</dt>
+              <dt style="font-size: 16px;">Любимые фильмы:</dt>
               <dd>"Братство крыши" (Good Story Media); "Контакт" (Good Story Media «Среда»)</dd>
             </dl>
             <dl class="clear_fix profile_info_row ">
-              <dt style="font-size: 15px;">Любимые книги:</dt>
+              <dt style="font-size: 16px;">Любимые книги:</dt>
               <dd>"КОД" – тайный язык информатики (Чарльз Петцольд); "Первому игроку приготовиться" (Эрнест Клайн)</dd>
             </dl>
             <dl class="clear_fix profile_info_row ">
-              <dt style="font-size: 15px;">Любимые игры:</dt>
-              <dd><span class="text-orange">информация отсутствует</span></dd>
+              <dt style="font-size: 16px;">Любимые игры:</dt>
+              <dd><span class="text-dark-blue">информация отсутствует</span></dd>
             </dl>
             <dl class="clear_fix profile_info_row ">
-              <dt style="font-size: 15px;">Любимые цитаты:</dt>
+              <dt style="font-size: 16px;">Любимые цитаты:</dt>
               <dd>Человек должен мечтать, чтобы видеть смысл жизни. (Вольтер)</dd>
             </dl>
             <dl class="clear_fix profile_info_row ">
-              <dt style="font-size: 15px;">О себе:</dt>
+              <dt style="font-size: 16px;">О себе:</dt>
               <dd>всегда с улыбкой на лице, но душевно сломленный – это обо мне</dd>
             </dl>
           </div>
@@ -192,12 +192,12 @@ body {
 
           <div class="profile_info">
             <dl class="clear_fix profile_info_row ">
-              <dt style="font-size: 15px;">Школа:</dt>
-              <dd><span class="text-orange">Покровская средняя школа</span> '21<br>Кресты, 2012-2021</dd>
+              <dt style="font-size: 16px;">Школа:</dt>
+              <dd><span class="text-dark-blue">Покровская средняя школа</span> '21<br>Кресты, 2012-2021</dd>
             </dl>
             <dl class="clear_fix profile_info_row ">
-              <dt style="font-size: 15px;">ССУЗ:</dt>
-              <dd><span class="text-orange">Колледж ПсковГУ (бывш. ПКСиЭ, ПИТ)</span><br>Псков, с 2022 г.<br>Радиоаппаратостроение</dd>
+              <dt style="font-size: 16px;">ССУЗ:</dt>
+              <dd><span class="text-dark-blue">Колледж ПсковГУ (бывш. ПКСиЭ, ПИТ)</span><br>Псков, с 2022 г.<br>Радиоаппаратостроение</dd>
             </dl>
           </div>
           
@@ -213,31 +213,31 @@ body {
 
           <div class="profile_info">
             <dl class="clear_fix profile_info_row ">
-              <dt style="font-size: 15px;">Полит. предпочтения:</dt>
+              <dt style="font-size: 16px;">Полит. предпочтения:</dt>
               <dd>Индифферентные</dd>
             </dl>
             <dl class="clear_fix profile_info_row ">
-              <dt style="font-size: 15px;">Мировоззрение:</dt>
-              <dd><span class="text-orange">информация отсутствует</span></dd>
+              <dt style="font-size: 16px;">Мировоззрение:</dt>
+              <dd><span class="text-dark-blue">информация отсутствует</span></dd>
             </dl>
             <dl class="clear_fix profile_info_row ">
-              <dt style="font-size: 15px;">Главное в жизни:</dt>
+              <dt style="font-size: 16px;">Главное в жизни:</dt>
               <dd>Совершенствование мира &<br>Семья и дети</dd>
             </dl>
             <dl class="clear_fix profile_info_row ">
-              <dt style="font-size: 15px;">Главное в людях:</dt>
+              <dt style="font-size: 16px;">Главное в людях:</dt>
               <dd>Ум, смелость и упорство</dd>
             </dl>
             <dl class="clear_fix profile_info_row ">
-              <dt style="font-size: 15px;">Отношение к курению:</dt>
+              <dt style="font-size: 16px;">Отношение к курению:</dt>
               <dd>Нейтральное</dd>
             </dl>
             <dl class="clear_fix profile_info_row ">
-              <dt style="font-size: 15px;">Отношение к алкоголю:</dt>
+              <dt style="font-size: 16px;">Отношение к алкоголю:</dt>
               <dd>Компромиссное</dd>
             </dl>
             <dl class="clear_fix profile_info_row ">
-              <dt style="font-size: 15px;">Вдохновляют:</dt>
+              <dt style="font-size: 16px;">Вдохновляют:</dt>
               <dd>пребывание в одиночестве и полной тишине &<br>занятие любимым делом &<br>восприятие искусства &<br>сомнительные источники вдохновения</dd>
             </dl>
           </div>
@@ -272,6 +272,11 @@ body {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
     }
+  </script>
+  <script>
+    // Получить элемент с помощью id="defaultOpen"
+    document.getElementById("defaultOpen").click();
+    evt.currentTarget.className += " active";
   </script>
 
 </body>

@@ -3,6 +3,7 @@
   text-align: center; /* текст по центру */
   background: linear-gradient(white, #111);
   color: white; /* белый цвет текста */
+  text-shadow: 3px 3px 3px #707070;
 }
 
 .header h1 {
@@ -30,7 +31,7 @@ a {
   
 /* Выровненная по правому краю ссылка */
 .navbar a.right {
-  float: right; /* Переместите ссылку вправо */
+  float: right;
 }
 
 /* Обеспечения правильного выбора размера */
@@ -44,7 +45,7 @@ a {
   flex-wrap: wrap;
 }
   
-/* Создайте два неравных столбца, которые находятся рядом друг с другом */
+/* Создаём два неравных столбца, которые находятся рядом друг с другом */
 /* Боковая панель/левая колонка */
 .side {
   color: white;
@@ -85,6 +86,10 @@ a {
   margin: -12.5px 0px 0px -5px;
 }
 
+.subtitle {
+  color: rgb(170, 170, 170);
+}
+
 .my_contacts_soc {
   margin: 0px 0px 10px 0px;
 }
@@ -97,7 +102,7 @@ a {
   
 /* Основная колонка */
 .main {
-  flex: 70%; /* Установите ширину основного содержимого */
+  flex: 70%; /* ширина основного содержимого */
   background-color: #f1f1f1;
   padding: 10px 5px 0px 5px; /* Немного отступов */
 }
@@ -107,19 +112,23 @@ a {
   .row {
     flex-direction: column;
   }
+  .tab button {
+    padding: 10px 10px;
+  }
 }
 
 @media screen and (max-width: 450px) {
   .tablinks {
-    font-size: 12px;
+    font-size: 20px;
   }
 }
   
-/* Адаптивный макет, когда экран меньше 405 пикселей в ширину, сделайте навигационные ссылки стекаются друг на друга, а не рядом друг с другом */
 @media screen and (max-width: 350px) {
+  .header h1 {
+    font-size: 20px;
+  }
   .navbar a {
-    float: none;
-    width: 100%;
+    width: 25%;
   }
 }
 
@@ -130,7 +139,10 @@ a {
   margin-bottom: 20px;
 }
 
-/* Стиль кнопок, которые используются для открытия содержимого вкладки */
+.tablinks {
+  width: 50%;
+}
+
 .tab button {
   color: white;
   background-color: inherit;
@@ -138,7 +150,8 @@ a {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 10px;
+  padding: 14px 14px;
+  font-size: 14px;
 }
 
 /* Изменение цвета фона кнопок при наведении курсора */
@@ -194,7 +207,7 @@ a {
 }
 
 .profile_info_row {
-  font-size: 14px;
+  font-size: 16px;
   padding-top: 10px;
 }
 
@@ -213,8 +226,12 @@ a {
   text-overflow: ellipsis;
 }
 
-.text-orange {
-  color: rgb(255, 0, 0);
+.text-light-blue {
+  color: rgb(130, 160, 210);
+}
+
+.text-dark-blue {
+  color: rgb(20, 60, 160);
 }
 
 .icon {
