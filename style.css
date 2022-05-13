@@ -155,7 +155,7 @@ a {
 }
 
 /* Изменение цвета фона кнопок при наведении курсора */
-.tab button:hover {
+.tab button:hover button:active {
   text-align: center;
   background-color: #444;
 }
