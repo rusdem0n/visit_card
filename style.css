@@ -115,6 +115,12 @@ a {
   .tab button {
     padding: 10px 10px;
   }
+  .side {
+    width: 100%;
+  }
+  .main {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -155,7 +161,7 @@ a {
 }
 
 /* Изменение цвета фона кнопок при наведении курсора */
-.tab button:hover button:active {
+.tab button:hover {
   text-align: center;
   background-color: #444;
 }
@@ -227,7 +233,7 @@ a {
 }
 
 .text-light-blue {
-  color: rgb(130, 160, 210);
+  color: rgb(120, 150, 205);
 }
 
 .text-dark-blue {
