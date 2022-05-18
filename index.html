@@ -19,6 +19,19 @@
   <div class="header">    
     <h1>Андрей Владимирович Макаров</h1>
     <p>Аристон, но не Есенин..</p>
+
+    <!-- Триггер/Открыть модальный -->
+    <button id="myBtn" class="btn-qrcode">#ПоделитьсяВизиткой</button>
+    <!-- Модальный -->
+    <div id="myModal" class="modal">
+      <!-- Модальное содержание -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Отканируйте QR-code, чтобы поделиться визиткой</p>
+        <img src="qrcode.jpg" style="min-width: 150px;width: 40%;padding: 20px;">
+      </div>
+    </div>
+
   </div>
 
   <div class="navbar">
@@ -58,11 +71,11 @@
         <img class="avatar_img" src="IMG_E.png">
         <button class="challenge">
           <a href="tel:+7 (921) 509-78-12" class="tel">
-            кнопка вызова
+            #КнопкаВызова
           </a>
         </button>
         </div>
-      <h4>Мои контакты:</h4>
+      <h4 style="margin-bottom: -7.5px;"><marquee behavior="alternate" onmouseout="this.start()" onmouseover="this.stop()">Мои контакты:</marquee></h4>
       <h4 class="subtitle">Телефон</h4>
       <p class="my_contacts">
         <a href="tel:+7 (921) 509-78-12" style="color: white; text-decoration: none;">
@@ -253,6 +266,33 @@
     <p>© 2022 (last update in 2022)</p>
   </div>
 
+  <script>
+    // Получить модальный
+    var modal = document.getElementById("myModal");
+
+    // Получить кнопку, которая открывает модальный
+    var btn = document.getElementById("myBtn");
+
+    // Получить элемент <span>, который закрывает модальный
+    var span = document.getElementsByClassName("close")[0];
+
+    // Когда пользователь нажимает на кнопку, откройте модальный
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+
+    // Когда пользователь нажимает на <span> (x), закройте модальное окно
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    // Когда пользователь щелкает в любом месте за пределами модального, закройте его
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
   <script>
     function openCity(evt, cityName) {
       // Объявить все переменные

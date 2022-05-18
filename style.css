@@ -10,6 +10,54 @@
   font-size: 35px;
 }
 
+.btn-qrcode {
+  color: white;
+  font-size: 14px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: none;
+  border-radius: 7.5px;
+  padding: 5px 7.5px 7.5px 7.5px;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Модальный (фон) */
+.modal {
+  display: none; /* Скрыто по умолчанию */
+  position: fixed; /* Оставаться на месте */
+  z-index: 1; /* Сидеть на вершине */
+  left: 0;
+  top: 0;
+  width: 100%; /* Полная ширина */
+  height: 100%; /* Полная высота */
+  overflow: auto; /* Включите прокрутку, если это необходимо */
+  background-color: rgba(0,0,0,0.75); /* Черный с непрозрачностью */
+}
+
+/* Модальное содержание/коробка */
+.modal-content {
+  background-color: rgba(55, 55, 55, 0.75);
+  margin: 15% auto; /* 15% сверху и по центру */
+  padding: 20px;
+  border: 1px solid #555;
+  border-radius: 10px;
+  width: 575px; /* Может быть больше или меньше, в зависимости от размера экрана */
+}
+
+/* Кнопка закрытия */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(133, 0, 222);
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* Стиль верхней панели навигации */
 .navbar {
   overflow: hidden; /* Скрыть переполнение */
@@ -109,6 +157,9 @@ a {
 
 /* Адаптивный макет, когда экран меньше, чем 600px широкий, сделать два столбцы складываются друг на друга, а не рядом друг с другом */
 @media screen and (max-width: 600px) {
+  .modal-content {
+    width: 75%;
+  }
   .row {
     flex-direction: column;
   }
