@@ -163,8 +163,9 @@
 }
 
 .question dt {
-  font-family: cursive;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 18px;
+  color: #333;
 }
 
 .modal_active { /* активный класс модального окна */
@@ -260,7 +261,7 @@ a, button {
 }
 
 .glow {
-  font-family: cursive;
+  font-family:'Courier New', Courier, monospace;
   font-size: 58px;
   color: #fff;
   text-align: center;
@@ -306,7 +307,7 @@ a, button {
 .news_header span {
   padding: 0 25px;
   font-size: 20px;
-  font-family: cursive;
+  font-family:'Courier New', Courier, monospace;
 }
 
 .news_data {
@@ -359,7 +360,7 @@ div.right {
 
 .title_photoalbum {
   background-color: #333;
-  font-family: cursive;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   height: 60px;
   padding: 5px 35px;
@@ -383,7 +384,7 @@ div.right {
 
 .year {
   text-align: center;
-  font-family: cursive;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   height: 50px;
   padding-top: 12px;
   margin: -27.5px -14px 10px -14px;
@@ -563,7 +564,7 @@ div.right {
   .qrcode {
     width: 75%;
   }
-  .top_close_overlay{
+  .top_close_overlay {
     position: relative;
   }
   .row {
@@ -572,10 +573,7 @@ div.right {
   .tab button {
     padding: 10px 10px;
   }
-  .side {
-    width: 100%;
-  }
-  .main {
+  .side, .main {
     width: 100%;
   }
   ::-webkit-scrollbar {
