@@ -1,1 +1,1 @@
-# visit_card
+# visit_card удалена)
